@@ -202,7 +202,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install --upgrade pip setuptools py
+          pip install --upgrade pip 'setuptools<81' py
           pip install -r requirements.txt
           pip install -e .[all]
 
@@ -227,7 +227,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install --upgrade pip setuptools py
+          pip install --upgrade pip 'setuptools<81' py
           pip install twine wheel
           pip install -r requirements.txt
           pip install -e .[all]
