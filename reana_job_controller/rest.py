@@ -41,7 +41,6 @@ from reana_job_controller.schemas import Job, JobRequest
 from reana_job_controller.utils import update_workflow_logs
 from reana_job_controller import config
 
-
 blueprint = Blueprint("jobs", __name__)
 
 job_request_schema = JobRequest()
